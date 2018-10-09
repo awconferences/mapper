@@ -92,9 +92,7 @@ final class InitializerTests: XCTestCase {
             }
         }
 
-        let payload: [String: Any] = [
-            "string": "Hello"
-        ]
+        let payload: [String: Any] = ["string": "Hello"]
 
         let test = Test.from(payload)
         XCTAssertTrue(test?.string == "Hello")
