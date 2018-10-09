@@ -83,4 +83,20 @@ final class InitializerTests: XCTestCase {
         let test = TestExtension.from(["string": "Hi"])
         XCTAssertTrue(test?.string == "Hi")
     }
+
+    func testCreatingFromDictionary() {
+        struct Test: Mappable {
+            let string: String
+            init(map: Mapper) throws {
+                try self.string = map.from("string")
+            }
+        }
+
+        let payload: [String: Any] = [
+            "string": "Hello"
+        ]
+
+        let test = Test.from(payload)
+        XCTAssertTrue(test?.string == "Hello")
+    }
 }

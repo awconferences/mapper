@@ -27,7 +27,7 @@ final class TransformTests: XCTestCase {
 
             init(map: Mapper) throws {
                 try dictionary = map.from("examples",
-                    transformation: Transform.toDictionary(key: { $0.key }))
+                                          transformation: Transform.toDictionary(key: { $0.key }))
             }
         }
 
@@ -36,13 +36,13 @@ final class TransformTests: XCTestCase {
                 [
                     "string": "hi",
                     "value": 1,
-                ],
+                    ],
                 [
                     "string": "bye",
                     "value": 2,
-                ],
+                    ],
             ],
-        ]
+            ]
 
         let test = Test.from(JSON)
         XCTAssertTrue(test?.dictionary.count == 2)
@@ -56,7 +56,7 @@ final class TransformTests: XCTestCase {
 
             init(map: Mapper) throws {
                 try dictionary = map.from("examples",
-                    transformation: Transform.toDictionary(key: { $0.key }))
+                                          transformation: Transform.toDictionary(key: { $0.key }))
             }
         }
 
@@ -77,7 +77,7 @@ final class TransformTests: XCTestCase {
 
             init(map: Mapper) throws {
                 try dictionary = map.from("examples",
-                    transformation: Transform.toDictionary(key: { $0.key }))
+                                          transformation: Transform.toDictionary(key: { $0.key }))
             }
         }
 
@@ -86,12 +86,12 @@ final class TransformTests: XCTestCase {
                 [
                     "string": "hi",
                     "value": 1,
-                ],
+                    ],
                 [
                     "string": "bye",
-                ],
+                    ],
             ],
-        ]
+            ]
 
         let test = try? Test(map: Mapper(JSON: JSON))
         XCTAssertNil(test)
@@ -108,4 +108,5 @@ final class TransformTests: XCTestCase {
             XCTFail("Expected missingFieldError")
         }
     }
+
 }

@@ -62,8 +62,8 @@
 		C2C036D61C2B180D003FB853 /* UniversalFramework_Test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = UniversalFramework_Test.xcconfig; sourceTree = "<group>"; };
 		C2C036F31C2B1A0B003FB853 /* Convertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Convertible.swift; sourceTree = "<group>"; };
 		C2C036F41C2B1A0B003FB853 /* MapperError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapperError.swift; sourceTree = "<group>"; };
-		C2C036F51C2B1A0B003FB853 /* Mappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mappable.swift; sourceTree = "<group>"; };
-		C2C036F61C2B1A0B003FB853 /* Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
+		C2C036F51C2B1A0B003FB853 /* Mappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mappable.swift; sourceTree = "<group>"; tabWidth = 4; };
+		C2C036F61C2B1A0B003FB853 /* Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; tabWidth = 4; };
 		C2C036F71C2B1A0B003FB853 /* URL+Convertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Convertible.swift"; sourceTree = "<group>"; };
 		C2C036F81C2B1A0B003FB853 /* Transform+Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Transform+Dictionary.swift"; sourceTree = "<group>"; };
 		C2C036F91C2B1A0B003FB853 /* Transform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transform.swift; sourceTree = "<group>"; };
@@ -89,7 +89,9 @@
 				C2C036D01C2B180D003FB853 /* Resources */,
 				C20174841BD5509D00E4FE18 /* Products */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
+			tabWidth = 4;
 		};
 		C20174841BD5509D00E4FE18 /* Products */ = {
 			isa = PBXGroup;

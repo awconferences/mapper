@@ -45,4 +45,8 @@ public extension Mappable {
 
         return nil
     }
+
+    public static func from(_ JSON: [String: Any]) -> Self? {
+        return try? self.init(map: Mapper(JSON: JSON as NSDictionary))
+    }
 }
